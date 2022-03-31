@@ -1,0 +1,89 @@
+/* mobile */
+
+.h-14 {
+	height: 14%;
+}
+.h-16 {
+	height: 16%;
+}
+.h-20 {
+	height: 20%;
+}
+.h-30 {
+	height: 30%;
+}
+.h-36 {
+	height: 36%;
+}
+.h-40 {
+	height: 40%;
+}
+.h-42 {
+	height: 42%;
+}
+.h-44 {
+	height: 44%;
+}
+.h-56 {
+	height: 56%;
+}
+.w-15 {
+	width: 15%;
+}
+.w-20 {
+	width: 20%;
+}
+.w-75 {
+	width: 75%;
+}
+.w-80 {
+	width: 80%;
+}
+.w-270 {
+	width: 270%;
+}
+@media screen and (min-width: 30em) {
+	.h-20-ns {
+		height: 20%;
+	}
+	.h-42-ns {
+		height: 42%;
+	}
+	.h-44-ns {
+		height: 44%;
+	}
+	.w-80-ns {
+		width: 80%;
+	}
+}
+/* tablet Pro */
+
+@media (max-width: 1024px) and (orientation: portrait) {
+	.flex-column-t {
+		flex-direction: column;
+	}
+	.hide-small {
+		display: none;
+	}
+	.h-14-t {
+		height: 14%;
+	}
+	.h-36-t {
+		height: 36%;
+	}
+	.h-50-t {
+		height: 50%;
+	}
+	.h-100-t {
+		height: 100%;
+	}
+}
+/* make lanscape view row layout for mobile */
+
+/* mobile landscape */
+
+@media (max-width: 700px) and (orientation: landscape) {
+	.flex-row-mobile {
+		flex-direction: row;
+	}
+}

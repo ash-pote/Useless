@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Useless Website</title>
+        <meta charset="UTF-8">
+        <meta content="initial-scale=1, maximum-scale=1" name="viewport">
+        <meta property="og:title" content="Useless Website">
+        <meta property="og:image" content="/img/preview.png">
+        <!---- Links ---->
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/tachyons.min.css" rel="stylesheet" type="text/css">
+        <link href="css/customtach.css" rel="stylesheet" type="text/css">
+       
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="img/favicon-32x32.png" rel="icon" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="page min-vh-100 flex items-stretch flex-column flex-column-m flex-column-t flex-row-mobile flex-row-ns">
+            <div class="w-100 vh-100 flex flex-wrap">
+                <div class="four-stars box w-100 h-16">
+                    <div class="stars-container w-100 flex justify-around">
+                        <div class="tc">
+                            <img src="img/star-yellow.png" class="yellow-star scale pointer" alt="yellow star">
+                        </div>
+                    
+                        <div class="tc">
+                            <img src="img/star-purple.png" class="purple-star scale pointer" alt="purple star">
+                        </div>
+
+                        <div class="tc">
+                            <img src="img/star-yellow.png" class="yellow-star-02 scale pointer" alt="yellow star">
+                        </div>
+                        
+                        <div class="tc">
+                            <img src="img/star-purple.png" class="purple-star-02 scale pointer" alt="purple star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100 h-20 flex">
+                    <div id="squares" class="box w-50 h-100 pointer">
+                        <!-- <h6>square rotation block</h6> -->
+                        <svg width="100%" height="100%" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.5">
+                            <rect x="50%" y="50%" width="20%" height="20%" />
+                            <rect x="50%" y="50%" width="40%" height="40%" />
+                            <rect x="50%" y="50%" width="60%" height="60%"/>
+                            <rect x="50%" y="50%" width="80%" height="80%"/>
+                            <rect x="50%" y="50%" width="105%" height="105%"/>
+                            <rect x="50%" y="50%" width="127%" height="127%"/>
+                        </svg>
+                    </div>
+
+                    <div class="box w-50 h-100 flex justify-center items-center">
+                         <!-- <h6>eyes block</h6> -->
+                         <svg id="eyes" width="190" height="103" viewBox="0 0 190 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M185.403 51.5C185.403 79.759 166.453 102.5 143.265 102.5C120.078 102.5 101.128 79.759 101.128 51.5C101.128 23.241 120.078 0.5 143.265 0.5C166.453 0.5 185.403 23.241 185.403 51.5Z" fill="#FDFDFD" stroke="#251C2B"/>
+                            <ellipse cx="143.007" cy="53.5087" rx="25.1257" ry="35.9244" fill="#251C2B"/>
+                            <path d="M153.911 47.2366C150.882 48.2896 147.892 45.5776 148.688 42.4987L153.937 22.1864C154.69 19.2722 158.31 18.2034 160.549 20.2342L175.285 33.6C177.524 35.6308 176.763 39.2936 173.896 40.2902L153.911 47.2366Z" fill="white"/>
+                            <path d="M84.775 51.5C84.775 79.759 65.8252 102.5 42.6375 102.5C19.4498 102.5 0.5 79.759 0.5 51.5C0.5 23.241 19.4498 0.5 42.6375 0.5C65.8252 0.5 84.775 23.241 84.775 51.5Z" fill="#FDFDFD" stroke="#251C2B"/>
+                            <ellipse cx="42.3825" cy="53.5087" rx="25.1257" ry="35.9244" fill="#251C2B"/>
+                            <path d="M53.2833 47.2366C50.254 48.2896 47.2641 45.5776 48.0597 42.4987L53.3089 22.1864C54.0619 19.2722 57.6819 18.2034 59.9209 20.2342L74.6566 33.6C76.8956 35.6308 76.1354 39.2936 73.2682 40.2902L53.2833 47.2366Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="box w-100 h-44 flex flex-wrap justify-center items-center">
+                    <!-- <h6>fact block</h6> -->
+                    <div class="fact-container">
+                        <button id="fact-btn" class="btn pointer">New Fact</button>
+                        <p id="fact-text"></p>
+                    </div>
+                </div>
+                <div class="w-100 h-20 flex">
+                    <div id="three-stars" class="box w-25 h-100 flex justify-center items-center pointer">
+                        <!-- <h6>3-stars block</h6> -->
+                        <svg class="three-stars" width="100%" height="80%" viewBox="0 0 70 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path id="middle-star"  d="M43.6724 62.6393L52.1247 59.2798L49.7381 67.3284L49.5555 67.9444L50.1974 67.9702L59.5738 68.3471L53.5511 74.3997L53.0512 74.902L53.6921 75.2045L62.1176 79.1819L53.658 82.1051L52.959 82.3467L53.4436 82.9053L59.3082 89.6667L50.0228 88.8985L49.3165 88.8401L49.4983 89.525L51.6878 97.7781L43.3791 93.4163L42.8103 93.1177L42.6605 93.7424L40.7031 101.906L35.0629 94.7705L34.6953 94.3054L34.2989 94.7461L28.5148 101.177L26.7211 92.7157L26.5982 92.1358L26.0473 92.3547L17.595 95.7142L19.9816 87.6656L20.1642 87.0497L19.5223 87.0239L10.1458 86.6469L16.1686 80.5944L16.6684 80.0921L16.0276 79.7896L7.60205 75.8121L16.0617 72.8889L16.7607 72.6474L16.2761 72.0887L10.4114 65.3273L19.6969 66.0955L20.4031 66.1539L20.2214 65.469L18.0318 57.216L26.3405 61.5777L26.9094 61.8763L27.0592 61.2516L29.0166 53.088L34.6568 60.2236L35.0244 60.6886L35.4208 60.2479L41.2049 53.817L42.9986 62.2783L43.1215 62.8583L43.6724 62.6393Z" fill="#FFEE55" stroke="#251C2B"/>
+                            <path id="bottom-star"  d="M55.7292 126.743L55.0453 127.024L55.5612 127.554L61.8059 133.966L52.4915 133.734L51.7831 133.717L52.004 134.39L54.6656 142.503L46.1194 138.627L45.5343 138.362L45.4207 138.994L43.937 147.257L37.895 140.459L37.5012 140.016L37.1308 140.478L31.727 147.232L29.4486 138.888L29.2925 138.316L28.7551 138.567L20.5105 142.408L22.4292 134.235L22.576 133.609L21.9337 133.621L12.5511 133.785L18.215 127.395L18.6851 126.865L18.0279 126.6L10.6622 123.629L62.825 123.823L55.7292 126.743Z" fill="#442EAD" stroke="#251C2B"/>
+                            <path id="top-star"  d="M53.571 27.2576L52.8871 26.9762L53.403 26.4463L59.6477 20.0342L50.3333 20.266L49.6249 20.2836L49.8458 19.6103L52.5074 11.4972L43.9611 15.3728L43.3761 15.6381L43.2625 15.0058L41.7788 6.74294L35.7368 13.5416L35.343 13.9846L34.9726 13.5218L29.5688 6.76825L27.2904 15.1121L27.1343 15.684L26.5969 15.4336L18.3523 11.5926L20.271 19.7653L20.4178 20.3908L19.7755 20.3795L10.3929 20.2154L16.0568 26.605L16.5269 27.1353L15.8697 27.4004L8.50397 30.3713L60.6668 30.1775L53.571 27.2576Z" fill="#442EAD" stroke="#251C2B"/>
+                        </svg>
+                    </div>
+                    <div id="bubble-container" class="w-75 h-100 pointer">
+                        <!-- <h6>bubbles block</h6> -->
+                        <svg class="bubble-svg" width="100%" height="120%" viewBox="0 0 360 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g mask="url(#mask0)" >
+                            <path d="M115.5 183C115.5 197.074 103.868 208.5 89.5 208.5C75.1316 208.5 63.5 197.074 63.5 183C63.5 168.926 75.1316 157.5 89.5 157.5C103.868 157.5 115.5 168.926 115.5 183Z" fill="white" stroke="#251C2B"/>
+
+                            <circle id="bubble" onclick="myFunction()" cx="118.5" cy="172.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle id="bubble" onclick="myFunction()"  cx="120" cy="190" r="3.5" fill="white" stroke="#251C2B"/>
+                            <circle id="bubble" onclick="myFunction()"   cx="113.5" cy="196.5" r="6" fill="white" stroke="#251C2B"/>
+                            <circle  id="bubble"  onclick="myFunction()"  cx="140" cy="171" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle class="bubble" onclick="myFunction()"   cx="92" cy="210" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle class="bubble"  cx="175.5" cy="181.5" r="31" fill="white" stroke="#251C2B"/>
+                            <circle class="bubble" cx="140" cy="207" r="25.5" fill="white" stroke="#251C2B"/>
+                            <path d="M52.5 168C52.5 176.575 45.7694 183.5 37.5 183.5C29.2306 183.5 22.5 176.575 22.5 168C22.5 159.425 29.2306 152.5 37.5 152.5C45.7694 152.5 52.5 159.425 52.5 168Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="56" cy="184" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="58.5" cy="211.5" r="22" fill="white" stroke="#251C2B"/>
+                            <circle cx="26.5" cy="201.5" r="22" fill="white" stroke="#251C2B"/>
+                            <circle cx="198" cy="168" r="21.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="178" cy="137" r="19.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="154" cy="147" r="19.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="214.5" cy="188.5" r="21" fill="white" stroke="#251C2B"/>
+                            <circle cx="219.5" cy="162.5" r="6" fill="white" stroke="#251C2B"/>
+                            <circle cx="10" cy="172" r="19.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="-11" cy="183" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M6.5 149C6.5 161.437 -3.36004 171.5 -15.5 171.5C-27.64 171.5 -37.5 161.437 -37.5 149C-37.5 136.563 -27.64 126.5 -15.5 126.5C-3.36004 126.5 6.5 136.563 6.5 149Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="196" cy="136" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="202" cy="149" r="7.5" fill="white" stroke="#251C2B"/>
+                            <path d="M223.5 152C223.5 156.114 219.947 159.5 215.5 159.5C211.053 159.5 207.5 156.114 207.5 152C207.5 147.886 211.053 144.5 215.5 144.5C219.947 144.5 223.5 147.886 223.5 152Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="189" cy="118" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="213" cy="134" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="207.5" cy="107.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle cx="184.5" cy="84.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle cx="163.5" cy="112.5" r="21" fill="white" stroke="#251C2B"/>
+                            <circle cx="210.5" cy="84.5" r="14" fill="white" stroke="#251C2B"/>
+                            <circle cx="196" cy="71" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="183" cy="68" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="141" cy="73" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="159" cy="85" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="162" cy="60" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="136" cy="94" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="213" cy="65" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="218.5" cy="50.5" r="8" fill="white" stroke="#251C2B"/>
+                            <circle cx="207" cy="55" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="207.5" cy="25.5" r="22" fill="white" stroke="#251C2B"/>
+                            <path d="M198.5 13C198.5 25.4368 188.64 35.5 176.5 35.5C164.36 35.5 154.5 25.4368 154.5 13C154.5 0.563176 164.36 -9.5 176.5 -9.5C188.64 -9.5 198.5 0.563176 198.5 13Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="190.5" cy="44.5" r="22" fill="white" stroke="#251C2B"/>
+                            <circle cx="-16" cy="24" r="24.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="4.5" cy="15.5" r="12" fill="white" stroke="#251C2B"/>
+                            <circle cx="124" cy="82" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="136" cy="61" r="7.5" fill="white" stroke="#251C2B"/>
+                            <path d="M157.5 0C157.5 13.5217 146.316 24.5 132.5 24.5C118.684 24.5 107.5 13.5217 107.5 0C107.5 -13.5217 118.684 -24.5 132.5 -24.5C146.316 -24.5 157.5 -13.5217 157.5 0Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="81" cy="8" r="24.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="37" cy="20" r="24.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="110" cy="93" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="93" cy="151" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="111" cy="19" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="98" cy="74" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="52" cy="87" r="7.5" fill="white" stroke="#251C2B"/>
+                            <path d="M81.5 87C81.5 92.7783 76.5963 97.5 70.5 97.5C64.4037 97.5 59.5 92.7783 59.5 87C59.5 81.2217 64.4037 76.5 70.5 76.5C76.5963 76.5 81.5 81.2217 81.5 87Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="86" cy="80" r="7.5" fill="white" stroke="#251C2B"/>
+                            <path d="M83.5 74C83.5 78.114 79.9473 81.5 75.5 81.5C71.0527 81.5 67.5 78.114 67.5 74C67.5 69.886 71.0527 66.5 75.5 66.5C79.9473 66.5 83.5 69.886 83.5 74Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="175" cy="74" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="-0.5" cy="195.5" r="6" fill="white" stroke="#251C2B"/>
+                            <circle cx="7" cy="192" r="3.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="60" cy="74" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M46.5 87C46.5 93.9222 41.1091 99.5 34.5 99.5C27.8909 99.5 22.5 93.9222 22.5 87C22.5 80.0778 27.8909 74.5 34.5 74.5C41.1091 74.5 46.5 80.0778 46.5 87Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="90.5" cy="103.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle cx="126" cy="132" r="31.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="194.5" cy="239.5" r="41" fill="white" stroke="#251C2B"/>
+                            <circle cx="26.5" cy="132.5" r="27" fill="white" stroke="#251C2B"/>
+                            <path d="M3.5 129C3.5 137.575 -3.23057 144.5 -11.5 144.5C-19.7694 144.5 -26.5 137.575 -26.5 129C-26.5 120.425 -19.7694 113.5 -11.5 113.5C-3.23057 113.5 3.5 120.425 3.5 129Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="19" cy="94" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="44.5" cy="75.5" r="8" fill="white" stroke="#251C2B"/>
+                            <circle cx="154" cy="23" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="158" cy="37" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="150" cy="51" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="64" cy="32" r="17.5" fill="white" stroke="#251C2B"/>
+                            <path d="M113.5 32.5C113.5 44.64 103.437 54.5 91 54.5C78.5632 54.5 68.5 44.64 68.5 32.5C68.5 20.36 78.5632 10.5 91 10.5C103.437 10.5 113.5 20.36 113.5 32.5Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="69" cy="57" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="37" cy="33" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M66.5 48C66.5 54.9222 61.1091 60.5 54.5 60.5C47.8909 60.5 42.5 54.9222 42.5 48C42.5 41.0778 47.8909 35.5 54.5 35.5C61.1091 35.5 66.5 41.0778 66.5 48Z" fill="white" stroke="#251C2B"/>
+                            <path d="M58.5 55C58.5 64.0991 50.9026 71.5 41.5 71.5C32.0974 71.5 24.5 64.0991 24.5 55C24.5 45.9009 32.0974 38.5 41.5 38.5C50.9026 38.5 58.5 45.9009 58.5 55Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="36" cy="106" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="21.5" cy="69.5" r="17" fill="white" stroke="#251C2B"/>
+                            <circle cx="56.5" cy="108.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle cx="81.5" cy="125.5" r="19" fill="white" stroke="#251C2B"/>
+                            <path d="M83.5 152.5C83.5 162.982 74.7816 171.5 64 171.5C53.2184 171.5 44.5 162.982 44.5 152.5C44.5 142.018 53.2184 133.5 64 133.5C74.7816 133.5 83.5 142.018 83.5 152.5Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="19" cy="40" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="2" cy="55" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="116" cy="66" r="16.5" fill="white" stroke="#251C2B"/>
+                            <path d="M18.5 87C18.5 96.0991 10.9026 103.5 1.5 103.5C-7.9026 103.5 -15.5 96.0991 -15.5 87C-15.5 77.9009 -7.9026 70.5 1.5 70.5C10.9026 70.5 18.5 77.9009 18.5 87Z" fill="white" stroke="#251C2B"/>
+                            <path d="M108.5 49C108.5 61.4368 98.64 71.5 86.5 71.5C74.36 71.5 64.5 61.4368 64.5 49C64.5 36.5632 74.36 26.5 86.5 26.5C98.64 26.5 108.5 36.5632 108.5 49Z" fill="white" stroke="#251C2B"/>
+                            <path d="M152.5 35.5C152.5 47.64 142.437 57.5 130 57.5C117.563 57.5 107.5 47.64 107.5 35.5C107.5 23.36 117.563 13.5 130 13.5C142.437 13.5 152.5 23.36 152.5 35.5Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="114" cy="51" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="13" cy="106" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="57" cy="131" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M23.5 118C23.5 126.575 16.7694 133.5 8.5 133.5C0.230573 133.5 -6.5 126.575 -6.5 118C-6.5 109.425 0.230573 102.5 8.5 102.5C16.7694 102.5 23.5 109.425 23.5 118Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="10" cy="210" r="15.5" fill="white" stroke="#251C2B"/>
+                            <path d="M381.5 183C381.5 197.074 369.868 208.5 355.5 208.5C341.132 208.5 329.5 197.074 329.5 183C329.5 168.926 341.132 157.5 355.5 157.5C369.868 157.5 381.5 168.926 381.5 183Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="358" cy="210" r="15.5" fill="white" stroke="#251C2B"/>
+                            <path d="M318.5 168C318.5 176.575 311.769 183.5 303.5 183.5C295.231 183.5 288.5 176.575 288.5 168C288.5 159.425 295.231 152.5 303.5 152.5C311.769 152.5 318.5 159.425 318.5 168Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="322" cy="184" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="324.5" cy="211.5" r="22" fill="white" stroke="#251C2B"/>
+                            <circle cx="292.5" cy="201.5" r="22" fill="white" stroke="#251C2B"/>
+                            <circle cx="276" cy="172" r="19.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="255" cy="183" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M238.5 189C238.5 191.442 236.307 193.5 233.5 193.5C230.693 193.5 228.5 191.442 228.5 189C228.5 186.558 230.693 184.5 233.5 184.5C236.307 184.5 238.5 186.558 238.5 189Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="241" cy="201" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M272.5 149C272.5 161.437 262.64 171.5 250.5 171.5C238.36 171.5 228.5 161.437 228.5 149C228.5 136.563 238.36 126.5 250.5 126.5C262.64 126.5 272.5 136.563 272.5 149Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="235.5" cy="116.5" r="10" fill="white" stroke="#251C2B"/>
+                            <circle cx="235" cy="106" r="9.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="250.5" cy="108.5" r="10" fill="white" stroke="#251C2B"/>
+                            <circle cx="243" cy="91" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M239.5 77.5C239.5 81.9473 236.114 85.5 232 85.5C227.886 85.5 224.5 81.9473 224.5 77.5C224.5 73.0527 227.886 69.5 232 69.5C236.114 69.5 239.5 73.0527 239.5 77.5Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="236" cy="55" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="250" cy="24" r="24.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="270.5" cy="15.5" r="12" fill="white" stroke="#251C2B"/>
+                            <circle cx="258" cy="104" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="347" cy="8" r="24.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="303" cy="20" r="24.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="359" cy="151" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="238" cy="173" r="15.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="364" cy="74" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="318" cy="87" r="7.5" fill="white" stroke="#251C2B"/>
+                            <path d="M347.5 87C347.5 92.7783 342.596 97.5 336.5 97.5C330.404 97.5 325.5 92.7783 325.5 87C325.5 81.2217 330.404 76.5 336.5 76.5C342.596 76.5 347.5 81.2217 347.5 87Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="352" cy="80" r="7.5" fill="white" stroke="#251C2B"/>
+                            <path d="M349.5 74C349.5 78.114 345.947 81.5 341.5 81.5C337.053 81.5 333.5 78.114 333.5 74C333.5 69.886 337.053 66.5 341.5 66.5C345.947 66.5 349.5 69.886 349.5 74Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="257" cy="203" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="265.5" cy="195.5" r="6" fill="white" stroke="#251C2B"/>
+                            <circle cx="273" cy="192" r="3.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="326" cy="74" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M312.5 87C312.5 93.9222 307.109 99.5 300.5 99.5C293.891 99.5 288.5 93.9222 288.5 87C288.5 80.0778 293.891 74.5 300.5 74.5C307.109 74.5 312.5 80.0778 312.5 87Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="247" cy="73" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="356.5" cy="103.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle cx="292.5" cy="132.5" r="27" fill="white" stroke="#251C2B"/>
+                            <circle cx="234" cy="134" r="9.5" fill="white" stroke="#251C2B"/>
+                            <path d="M269.5 129C269.5 137.575 262.769 144.5 254.5 144.5C246.231 144.5 239.5 137.575 239.5 129C239.5 120.425 246.231 113.5 254.5 113.5C262.769 113.5 269.5 120.425 269.5 129Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="285" cy="94" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="310.5" cy="75.5" r="8" fill="white" stroke="#251C2B"/>
+                            <circle cx="330" cy="32" r="17.5" fill="white" stroke="#251C2B"/>
+                            <path d="M379.5 32.5C379.5 44.64 369.437 54.5 357 54.5C344.563 54.5 334.5 44.64 334.5 32.5C334.5 20.36 344.563 10.5 357 10.5C369.437 10.5 379.5 20.36 379.5 32.5Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="335" cy="57" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="303" cy="33" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M332.5 48C332.5 54.9222 327.109 60.5 320.5 60.5C313.891 60.5 308.5 54.9222 308.5 48C308.5 41.0778 313.891 35.5 320.5 35.5C327.109 35.5 332.5 41.0778 332.5 48Z" fill="white" stroke="#251C2B"/>
+                            <path d="M324.5 55C324.5 64.0991 316.903 71.5 307.5 71.5C298.097 71.5 290.5 64.0991 290.5 55C290.5 45.9009 298.097 38.5 307.5 38.5C316.903 38.5 324.5 45.9009 324.5 55Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="302" cy="106" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="287.5" cy="69.5" r="17" fill="white" stroke="#251C2B"/>
+                            <circle cx="322.5" cy="108.5" r="19" fill="white" stroke="#251C2B"/>
+                            <circle cx="347.5" cy="125.5" r="19" fill="white" stroke="#251C2B"/>
+                            <path d="M349.5 152.5C349.5 162.982 340.782 171.5 330 171.5C319.218 171.5 310.5 162.982 310.5 152.5C310.5 142.018 319.218 133.5 330 133.5C340.782 133.5 349.5 142.018 349.5 152.5Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="285" cy="40" r="16.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="268" cy="55" r="16.5" fill="white" stroke="#251C2B"/>
+                            <path d="M284.5 87C284.5 96.0991 276.903 103.5 267.5 103.5C258.097 103.5 250.5 96.0991 250.5 87C250.5 77.9009 258.097 70.5 267.5 70.5C276.903 70.5 284.5 77.9009 284.5 87Z" fill="white" stroke="#251C2B"/>
+                            <path d="M374.5 49C374.5 61.4368 364.64 71.5 352.5 71.5C340.36 71.5 330.5 61.4368 330.5 49C330.5 36.5632 340.36 26.5 352.5 26.5C364.64 26.5 374.5 36.5632 374.5 49Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="279" cy="106" r="12.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="323" cy="131" r="12.5" fill="white" stroke="#251C2B"/>
+                            <path d="M289.5 118C289.5 126.575 282.769 133.5 274.5 133.5C266.231 133.5 259.5 126.575 259.5 118C259.5 109.425 266.231 102.5 274.5 102.5C282.769 102.5 289.5 109.425 289.5 118Z" fill="white" stroke="#251C2B"/>
+                            <circle cx="258" cy="70" r="7.5" fill="white" stroke="#251C2B"/>
+                            <circle cx="276" cy="210" r="15.5" fill="white" stroke="#251C2B"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 vh-100 flex flex-wrap">
+                <div class="useless-container w-100 h-16 flex items-center hide-small justify-end">
+                    <!-- <h1>Useless Website</h1> -->
+                    <div class="useless">
+                        <h1>Useless</h1>
+                    </div>
+                </div>
+                <div class="w-100 h-36 h-36-t h-20-ns">
+                    <div id="shapesSection" class="w-100 h-100 w-100-ns">
+                        <!-- <h6>ahsahshsa block</h6> -->
+                        <section  class="shapes">
+                            <!-- Matterjs work goes here -->
+                        </section>
+                    </div>
+                </div>
+                <div class="w-100 box h-50 h-44-ns h-50-t flex">
+                    <div class="box w-75 h-100 w-80-ns flex flex-wrap justify-center items-center">
+                         <!-- <h6>clock block</h6> -->
+                    <div class="clock">
+                        <div class="hand hour"></div>
+                        <div class="hand minute"></div>
+                        <div class="hand second"></div>
+                    </div>
+                    </div>
+                    <div class="w-25 h-100 w-20-ns w-25-t">
+                        <div id="squares-three" class="box w-100 h-30 squares flex justify-center items-center">
+                                <!-- <h6>squares block</h6> -->
+                            <svg class="p-square drag" width="50%" height="80%" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="54" height="51" fill="#BBADEF" stroke="#313131"/>
+                            </svg>
+
+                            <svg class="g-square drag" width="50%" height="80%" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="54" height="51" fill="#D4FFB8" stroke="#313131"/>
+                            </svg>
+
+                            <svg class="b-square drag" width="50%" height="80%" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="54" height="51" fill="#251C2B" stroke="#313131"/>
+                            </svg>
+                        </div>
+                        <div id="numbers" class="numbers box w-100 h-30 flex items-center justify-center pointer">
+                            <!-- <h6>numbers block</h6> -->
+                            <p id="number">0</p>
+                        </div>
+
+                        <div id="flashes" class="box w-100 h-40 pointer">
+                            <!-- <h6>grid block</h6> -->
+                            <svg width="119%" height="100%" viewBox="0 0 127 159" stroke="#313131" fill="#D4FFB8" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="flash" x="-43.5" y="106.5" width="22" height="21"/>
+                                <rect class="flash" x="-21.5" y="106.5" width="22" height="21"/>
+                                <rect class="flash" x="0.5" y="106.5" width="22" height="21"/>
+
+                                <rect class="flash" x="24.5" y="-44.5" width="22" height="22"/>
+                                <rect class="flash" x="24.5" y="-21.5" width="22" height="22"/>
+                                <rect class="flash" x="24.5" y="0.5" width="22" height="22"/>
+
+
+                                <rect class="flash"  x="24.5" y="22.5" width="22" height="21"/>
+                                <rect class="flash"  x="46.5" y="22.5" width="21" height="21"/>
+                                <rect class="flash"  x="67.5" y="22.5" width="21" height="21"/>
+                                <rect class="flash"  x="88.5" y="22.5" width="22" height="21"/>
+                                <rect class="flash"  x="88.5" y="43.5" width="22" height="21"/>
+                                <rect class="flash"  x="88.5" y="64.5" width="22" height="21"/>
+                                <rect x="88.5" y="106.5" width="22" height="21"/>
+
+                                <rect class="flash"  x="88.5" y="127.5" width="22" height="21" />
+                                <rect class="flash"  x="88.5" y="148.5" width="22" height="21" />
+                                <rect class="flash"  x="88.5" y="169.5" width="22" height="21" />
+                                <rect class="flash"  x="88.5" y="191.5" width="22" height="21" />
+
+
+                                <rect class="flash"  x="132.5" y="106.5" width="22" height="21"/>
+                                <rect class="flash"  x="110.5" y="106.5" width="22" height="21"/>
+                                
+
+                                <rect class="flash"  x="66.5" y="106.5" width="22" height="21"/>
+                                <rect class="flash"  x="66.5" y="64.5" width="22" height="21"/>
+                                <rect class="flash"  x="44.5" y="64.5" width="22" height="21"/>
+                                <rect x="44.5" y="85.5" width="22" height="21"/>
+                                <rect class="flash"  x="44.5" y="106.5" width="22" height="21"/>
+                                <rect class="flash"  x="22.5" y="106.5" width="22" height="21"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 h-14 h-20-ns h-14-t">
+                    <div class="hover-here box w-100 h-56 flex items-center justify-center pointer hide-small">
+                        <!-- Hover Here -->
+                            <div>
+                                <h3 id="hover"><span>h</span><span>o</span><span>v</span><span>e</span><span>r</span><span> </span><span>h</span><span>e</span><span>r</span><span>e</span></h3>
+                            </div>
+                    </div>
+                    <div class="w-100 box h-100 h-44-ns h-100-t flex flex-wrap justify-around pointer" id="stars-bottom">
+                        <!-- rotating stars -->
+                        <div class="w-15 h-100 flex items-center justify-center">
+                            <svg viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.0478 1.67368L25.9086 5.73438C26.1014 6.64368 27.0663 7.16057 27.93 6.81725L32.0476 5.18066C32.4355 5.02651 32.8303 5.38731 32.7117 5.78745L31.6312 9.43121C31.3532 10.3686 32.0321 11.3171 33.0091 11.3564L37.4213 11.5338C37.8562 11.5513 38.0626 12.0776 37.7556 12.3861L35.1864 14.968C34.4552 15.7028 34.6719 16.94 35.6093 17.3825L39.3366 19.1421C39.742 19.3334 39.7101 19.9204 39.2864 20.0668L35.7119 21.302C34.7082 21.6488 34.3728 22.9003 35.0687 23.7026L37.5467 26.5595C37.8405 26.8981 37.5745 27.4224 37.1278 27.3854L33.0201 27.0456C31.9871 26.9601 31.1808 27.9232 31.4466 28.9251L32.3806 32.4458C32.4923 32.8665 32.0503 33.219 31.665 33.0167L27.7552 30.9642C26.8894 30.5097 25.8273 30.9918 25.5993 31.9426L24.7131 35.6384C24.6158 36.0443 24.0935 36.1593 23.8347 35.8319L21.087 32.3558C20.5106 31.6265 19.4166 31.5917 18.795 32.2828L16.0191 35.3691C15.7458 35.673 15.243 35.5383 15.1582 35.1384L14.2974 31.0777C14.1047 30.1684 13.1398 29.6515 12.276 29.9948L8.1584 31.6314C7.77056 31.7856 7.37571 31.4248 7.49436 31.0246L8.57481 27.3809C8.85278 26.4434 8.17394 25.4949 7.19696 25.4557L2.78473 25.2783C2.34984 25.2608 2.14339 24.7345 2.45039 24.426L5.01965 21.844C5.7508 21.1093 5.53408 19.8721 4.59671 19.4296L0.869434 17.67C0.464066 17.4787 0.495899 16.8917 0.919579 16.7453L4.49409 15.5101C5.49787 15.1633 5.8332 13.9118 5.13732 13.1095L2.65929 10.2526C2.36557 9.91396 2.63149 9.38971 3.07823 9.42667L7.18591 9.76652C8.21895 9.85198 9.02525 8.88888 8.75943 7.88697L7.82537 4.3663C7.71376 3.94561 8.15569 3.59307 8.54106 3.79537L12.4508 5.84787C13.3166 6.30235 14.3787 5.82034 14.6067 4.86951L15.4929 1.17369C15.5902 0.767841 16.1126 0.652801 16.3714 0.980225L19.119 4.45634C19.6954 5.18555 20.7895 5.22036 21.411 4.52927L24.1869 1.44301C24.4603 1.13907 24.963 1.27378 25.0478 1.67368Z" fill="#D4FFB8" stroke="#251C2B"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 vh-100 flex flex-wrap">
+                <div class="w-100 h-16 flex hide-small">
+                    <div class="web-container w-70 h-100 flex items-center">
+                        <div class="web">
+                            <h1>Web</h1>
+                        </div>
+                    </div>
+                    <div class="circle-wiggle-container w-30 h-100 box flex justify-center items-center pointer">
+                        <!-- <h1>top right circle</h1> -->
+                        <svg class="circle-wiggle" width="90%" height="90%" viewBox="0 0 124 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="63.5" cy="62.5" r="38.5" fill="#FFEE55" stroke="#251C2B" stroke-width="2"/>
+                            <path d="M21.4591 98.8139C22.285 102.552 25.7581 110.046 33.0439 110.121" stroke="#251C2B" stroke-width="2"/>
+                            <path d="M11.3259 99.0327C12.9076 106.192 19.5597 120.546 33.5141 120.689" stroke="#251C2B" stroke-width="2"/>
+                            <path d="M102.945 28.9133C102.091 25.1825 98.5624 17.7198 91.2781 17.7143" stroke="#251C2B" stroke-width="2"/>
+                            <path d="M113.074 28.598C111.439 21.4526 104.681 7.15917 90.7294 7.14879" stroke="#251C2B" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="w-100 h-50 h-42-ns h-50-t flex">
+                    <div id="space_div"  class="box w-25 h-100 flex flex-column items-center justify-center pointer">
+                        <!-- <h6>space circles block</h6> -->
+                        <svg class="space_top" width="72%" height="15%" viewBox="0 0 79 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="39" cy="19.5" rx="39" ry="11" fill="#251C2B"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.0005 9.49999C18.5733 9.49999 1.7991 13.8935 0.000511169 19.5L0.535172 19.5L0 19.5L1.70475e-06 8.10418e-07L78 0L78 19.4984C76.1987 13.8927 59.4258 9.5 39.0005 9.49999ZM10.2511 14.1263C9.90438 14.2159 9.57091 14.3075 9.25013 14.4006C9.98521 14.1534 10.7628 13.9144 11.5809 13.6845C12.049 13.5531 12.5293 13.4249 13.0214 13.3002C12.0199 13.5684 11.0985 13.8455 10.2511 14.1263ZM39.2362 10.5002C37.4779 10.5028 35.7989 10.5312 34.1958 10.5826C35.7693 10.5281 37.3728 10.5 39.0005 10.5L39.2362 10.5002ZM77.0705 19.5L77.0705 19.5L78 19.5L78 19.5L77.0705 19.5Z" fill="#FCFFFA"/>
+                        </svg>
+
+                        <svg class="planet_01" width="15%" height="15%" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.499999 12.5C0.5 5.85315 5.66777 0.5 12 0.500001C18.3322 0.500001 23.5 5.85315 23.5 12.5C23.5 19.1469 18.3322 24.5 12 24.5C5.66776 24.5 0.499999 19.1468 0.499999 12.5Z" fill="#BBADEF" stroke="#251C2B"/>
+                        </svg>
+
+                        <svg class="planet_02" width="24%" height="24%" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.499998 20.5C0.499999 9.4543 9.45431 0.500001 20.5 0.500002C31.5457 0.500003 40.5 9.45431 40.5 20.5C40.5 31.5457 31.5457 40.5 20.5 40.5C9.4543 40.5 0.499997 31.5457 0.499998 20.5Z" fill="#6852D1" stroke="#251C2B"/>
+                        </svg>
+
+                        <svg class="planet_03" width="30%" height="30%" viewBox="0 0 57 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.499999 27.5C0.5 12.5968 12.8036 0.5 28 0.500001C43.1964 0.500003 55.5 12.5968 55.5 27.5C55.5 42.4032 43.1964 54.5 28 54.5C12.8036 54.5 0.499997 42.4032 0.499999 27.5Z" fill="#BBADEF" stroke="#251C2B"/>
+                        </svg>
+
+                        <svg class="planet_04" width="24%" height="24%" viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.500002 20.32C0.500003 9.74622 9.43488 1.14 20.5 1.14001C31.5651 1.14001 40.5 9.74623 40.5 20.32C40.5 30.8938 31.5651 39.5 20.5 39.5C9.43487 39.5 0.500001 30.8938 0.500002 20.32Z" fill="#6852D1" stroke="#251C2B"/>
+                        </svg>
+
+                        <svg class="planet_05" width="15%" height="15%" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.499999 12.5C0.5 5.85315 5.66777 0.5 12 0.500001C18.3322 0.500001 23.5 5.85315 23.5 12.5C23.5 19.1469 18.3322 24.5 12 24.5C5.66776 24.5 0.499999 19.1468 0.499999 12.5Z" fill="#BBADEF" stroke="#251C2B"/>
+                        </svg>
+
+                        <svg class="planet_06" width="10%" height="10%" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 6.5C0.5 3.14786 2.99936 0.5 6 0.5C9.00064 0.500001 11.5 3.14786 11.5 6.5C11.5 9.85214 9.00064 12.5 6 12.5C2.99936 12.5 0.499999 9.85214 0.5 6.5Z" fill="#6852D1" stroke="#251C2B"/>
+                        </svg>
+
+                        <svg class="space_bottom" width="72%" height="15%" viewBox="0 0 79 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="39" cy="11" rx="39" ry="11" transform="rotate(-180 39 11)" fill="#251C2B"/>
+                            <ellipse  cx="39" cy="11" rx="39" ry="11" transform="rotate(-180 39 11)" fill="#251C2B"/>
+
+                            <path  fill-rule="evenodd" clip-rule="evenodd" d="M38.9995 21C59.4267 21 76.2009 16.6065 77.9995 11L77.4648 11L78 11L78 30.5L-3.40949e-06 30.5L-2.82028e-10 11.0016C1.80129 16.6073 18.5742 21 38.9995 21ZM67.7489 16.3737C68.0956 16.2841 68.4291 16.1925 68.7499 16.0994C68.0148 16.3466 67.2372 16.5856 66.4191 16.8155C65.951 16.9469 65.4707 17.0751 64.9786 17.1999C65.9801 16.9316 66.9015 16.6545 67.7489 16.3737ZM38.7638 19.9998C40.5221 19.9972 42.2011 19.9688 43.8042 19.9174C42.2307 19.9719 40.6272 20 38.9995 20L38.7638 19.9998ZM0.9295 11L0.929504 11L0 11L0 11L0.9295 11Z" fill="#FCFFF4"/>
+                        </svg>
+                    </div>
+                    <div class="w-75 h-100">
+                        <div class="w-100 h-100 h-100-t h-75-ns conveyor-belt overflow-hidden z-index-10">
+                            <!-- <h6>big circles</h6> -->
+                            <div class="w-270 h-100 flex items-stretch bg-conveyor pointer">
+                                <div id="conveyor" class="flex conveyor">
+                                    <div class="w-25 flex">
+                                        <svg width="100%" height="100%" viewBox="0 0 241 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M120.5 0.50001C186.776 0.500007 240.5 54.0039 240.5 120C240.5 185.996 186.776 239.5 120.5 239.5C54.2239 239.5 0.499998 185.996 0.499995 120C0.499992 54.0039 54.2239 0.500013 120.5 0.50001Z" fill="#FDFCFD" stroke="#251C2B"/>
+                                        </svg>
+                                    </div>
+                                    <div class="w-25 flex">
+                                        <svg width="100%" height="100%" viewBox="0 0 241 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M120.5 0.50001C186.776 0.500007 240.5 54.0039 240.5 120C240.5 185.996 186.776 239.5 120.5 239.5C54.2239 239.5 0.499998 185.996 0.499995 120C0.499992 54.0039 54.2239 0.500013 120.5 0.50001Z" fill="#6852D1" stroke="#251C2B"/>
+                                        </svg>
+                                    </div> 
+                                    <div class="w-25 flex">
+                                        <svg width="100%" height="100%" viewBox="0 0 241 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M120.5 0.50001C186.776 0.500007 240.5 54.0039 240.5 120C240.5 185.996 186.776 239.5 120.5 239.5C54.2239 239.5 0.499998 185.996 0.499995 120C0.499992 54.0039 54.2239 0.500013 120.5 0.50001Z" fill="#FDFCFD" stroke="#251C2B"/>
+                                        </svg>
+                                    </div>
+                                    <div class="w-25 flex">
+                                        <svg width="100%" height="100%" viewBox="0 0 241 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M120.5 0.50001C186.776 0.500007 240.5 54.0039 240.5 120C240.5 185.996 186.776 239.5 120.5 239.5C54.2239 239.5 0.499998 185.996 0.499995 120C0.499992 54.0039 54.2239 0.500013 120.5 0.50001Z" fill="#6852D1" stroke="#251C2B"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div id="reactive-div" class="reactive box w-100 h-25 pa1 flex hide-small pointer">
+                                <!-- <h6>reactive type</h6> -->
+                                <div>R</div><div>E</div><div>A</div><div>C</div><div>T</div><div>I</div><div>V</div><div>E</div><div>T</div><div>Y</div><div>P</div><div>E</div>
+
+                                <div>R</div><div>E</div><div>A</div><div>C</div><div>T</div><div>I</div><div>V</div><div>E</div><div>T</div><div>Y</div><div>P</div><div>E</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="squiggle" class="squiggle-container box w-100 h-50 h-42-ns h-50-t flex">
+                    <div id="my-container"></div> <!-- p5.js canvas goes in here -->
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js">
+	</script> <!---- GSAP ---->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/Draggable.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/matter.min.js"></script>
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script> <!-- p5.js -->
+    <script src="js/main.js"></script>
+</html>

@@ -1,0 +1,404 @@
+/* Big desktop */
+/* above 2400px */
+@media (min-width: 2400px) {
+	/* facts */
+	.btn {
+		font-size: 40px;
+		padding: 16px 40px;
+		margin-bottom: 32px;
+	}
+	.fact-container p {
+		font-size: 24px;
+	}
+	/* reactive */
+	.reactive div {
+		font-size: 34px;
+	}
+	/* hover */
+	.hover-here h3 {
+		font-size: 96px;
+	}
+}
+
+/* below 2400px */
+@media (max-width: 2400px) {
+	/* facts */
+	.fact-container p {
+		font-size: 20px;
+	}
+	.btn {
+		font-size: 36px;
+		padding: 16px 32px;
+		margin-bottom: 32px;
+	}
+	/* Hover Here */
+	.hover-here h3 {
+		font-size: 78px;
+	}
+	/* reactive */
+	.reactive div {
+		font-size: 27px;
+	}
+}
+
+/* below 2000px */
+@media (max-width: 2000px) {
+	/* facts */
+	.btn {
+		font-size: 32px;
+		padding: 8px 24px;
+		margin-bottom: 24px;
+	}
+	.fact-container p {
+		font-size: 18px;
+	}
+}
+
+/* big desktop 1 */
+/* above 1600px */
+@media (min-width: 1600px) {
+	/* Numbers Block */
+	.numbers {
+		font-size: 96px;
+	}
+	/* space animation */
+	.space_top {
+		margin-bottom: 40px;
+	}
+	.space_bottom {
+		margin-top: 40px;
+	}
+}
+
+/* small desktop */
+/* below 1600px */
+@media (max-width: 1600px) {
+	/* facts */
+	.btn {
+		font-size: 24px;
+		padding: 8px 24px;
+		margin-bottom: 16px;
+	}
+	.fact-container p {
+		font-size: 16px;
+	}
+	/* Bubbles */
+	.bubble-svg {
+		transform: scale(1.1);
+	}
+	/* reactive */
+	.reactive div {
+		font-size: 18px;
+	}
+	/* Hover Here */
+	.hover-here h3 {
+		font-size: 48px;
+		text-transform: uppercase;
+		color: #4E34C5;
+		text-align: center;
+	}
+	/* space animation */
+	.planet_01, .planet_05 {
+		width: 18%;
+		height: 18%;
+	}
+	.planet_02, .planet_04 {
+		width: 30%;
+		height: 30%;
+	}
+	.planet_03 {
+		width: 40%;
+		height: 40%;
+	}
+	.planet_06 {
+		width: 10%;
+		height: 10%;
+	}
+	.space_bottom, .space_top {
+		height: 20%;
+	}
+	.space_bottom {
+		margin-top: 20px;
+	}
+	.space_top {
+		margin-bottom: 20px;
+	}
+}
+
+/* small desktop 2 */
+/* below 1200px */
+@media (max-width: 1400px) {
+	/* global styles */
+	body {
+		overflow: unset;
+	}
+	/* facts */
+	.fact-container {
+		margin: 0 24px;
+	}
+	.btn {
+		font-size: 21px;
+		padding: 8px 24px;
+		margin-bottom: 16px;
+	}
+	.fact-container p {
+		font-size: 16px;
+		line-height: 140%;
+	}
+	/* bubbles */
+	.bubble-svg {
+		transform: scale(1.4);
+	}
+	/* reactive */
+	.reactive div {
+		font-size: 16px;
+	}
+	/* space animation */
+	.space_bottom {
+		margin-top: 20px;
+	}
+	.space_top {
+		margin-bottom: 20px;
+	}
+
+	/* small desktop 2 */
+	/* below 1200px */
+	@media (max-width: 1300px) {
+		/* facts */
+		.fact-container p {
+			font-size: 14px;
+		}
+		/* reactive */
+		.reactive div {
+			font-size: 16px;
+		}
+	}
+
+	/* small desktop 3 */
+	/* below 1100px */
+	@media (max-width: 1100px) {
+		/* facts */
+		.btn {
+			font-size: 16px;
+			padding: 8px 24px;
+		}
+		.fact-container p {
+			font-size: 12px;
+		}
+		/* reactive */
+		.reactive div {
+			font-size: 14px;
+		}
+		/* hover */
+		.hover-here h3 {
+			font-size: 40px;
+		}
+	}
+
+	/* Ipad pro portrait */
+	/* below 1024px */
+	@media (max-width: 1024px) and (orientation: portrait) {
+		/* facts */
+		.fact-container {
+			margin: 0 80px;
+		}
+		.btn {
+			font-size: 48px;
+			padding: 16px 40px;
+			margin-bottom: 24px;
+		}
+		.fact-container p {
+			font-size: 27px;
+		}
+		/* bubbles */
+		.bubble-svg {
+			transform: scale(1.3);
+		}
+		/* Three Squares */
+		.drag {
+			transform: scale(0.8);
+		}
+		/* Numbers Block */
+		.numbers {
+			font-size: 104px;
+			font-family: gopher, sans-serif;
+		}
+		/* Hover Here */
+		.hover-here h3 {
+			font-size: 80px;
+		}
+		.reactive div {
+			font-size: 34px;
+		}
+		/* space animation */
+		.space_bottom {
+			margin-top: 46px;
+		}
+		.space_top {
+			margin-bottom: 46px;
+		}
+	}
+
+	/* Ipad portrait */
+	/* below 800px */
+	@media (max-width: 800px) and (orientation: portrait) {
+		/* facts */
+		.btn {
+			font-size: 36px;
+			padding: 16px 32px;
+			margin-bottom: 24px;
+		}
+		.fact-container p {
+			font-size: 21px;
+		}
+		.fact-container {
+			margin: 0 56px;
+		}
+	} 
+
+	/* mobile large*/
+	/* below 700px */
+	@media (max-width: 700px) {
+		/* facts */
+		.fact-container {
+			margin: 0 56px;
+		}
+		/* reactive */
+		.reactive div {
+			font-size: 27px;
+		}
+		/* space animation */
+		.space_bottom {
+			margin-top: 32px;
+		}
+		.space_top {
+			margin-bottom: 32px;
+		}
+	}
+
+	/* below 600px */
+	@media (max-width: 600px) {
+		/* facts */
+		.fact-container {
+			margin: 0 32px;
+		}
+		.fact-container p {
+			font-size: 16px;
+		}
+		.btn {
+			font-size: 27px;
+			padding: 8px 24px;
+			margin-bottom: 16px;
+		}
+		/* hover */
+		.hover-here h3 {
+			font-size: 70px;
+		}
+		.reactive div {
+			font-size: 23px;
+		}
+		/* numbers */
+		.numbers {
+			font-size: 64px;
+		}
+		/* hover */
+		.hover-here h3 {
+			font-size: 56px;
+		}
+	}
+
+	/* below 500px */
+	@media (max-width: 500px) {
+		/* facts */
+		.btn {
+			font-size: 24px;
+			padding: 8px 24px;
+			margin-bottom: 16px;
+		}
+		.fact-container {
+			margin: 0 24px;
+		}
+		.fact-container p {
+			font-size: 16px;
+		}
+		.numbers {
+			font-size: 64px;
+			font-family: gopher, sans-serif;
+		}
+		/* reactive */
+		.reactive div {
+			font-size: 18px;
+		}
+	}
+
+	/* below 400px */
+	@media (max-width: 400px) {
+		/* facts */
+		.btn {
+			font-size: 20px;
+			padding: 8px 24px;
+		}
+		.fact-container p {
+			font-size: 14px;
+			line-height: 140%;
+		}
+		.numbers {
+			font-size: 64px;
+			font-family: gopher, sans-serif;
+		}
+		/* reactive */
+		.reactive div {
+			font-size: 15px;
+		}
+		/* hover */
+		.hover-here h3 {
+			font-size: 46px;
+		}
+	}
+
+    /* below 340px */
+	@media (max-width: 340px) {
+		/* facts */
+		.fact-container {
+			margin: 0 16px;
+		}
+		.btn {
+			font-size: 18px;
+			padding: 8px 16px;
+			margin-bottom: 16px;
+		}
+		.fact-container p {
+			font-size: 12px;
+			line-height: 130%;
+		}
+		/* hover */
+		.hover-here h3 {
+			font-size: 40px;
+		}
+	}
+}
+
+/* Galxy fold */
+@media (max-width: 280px) and (max-width: 653px) {
+	/* reactive */
+	.reactive div {
+		font-size: 12px;
+	}
+}
+
+/* mobile landscape */
+@media (max-width: 700px) and (orientation: landscape) {
+	/* facts */
+	.fact-container p {
+		font-size: 4px;
+	}
+	.fact-container {
+		margin: 0 4px;
+	}
+	.btn {
+		font-size: 8px;
+		padding: 2px 16px;
+		border-radius: 16px;
+		margin-bottom: 4px;
+	}
+}
